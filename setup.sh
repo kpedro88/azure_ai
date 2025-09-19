@@ -7,6 +7,7 @@ source ${AZURE_ENV}/bin/activate
 
 python3 -m pip install azure-identity aiohttp
 python3 -m pip install --pre azure-ai-projects
+python3 -m pip install azure-cli
 
 if [ ! -e ${SECRETS_FILE} ]; then
 	cat << 'EOF' > ${SECRETS_FILE}

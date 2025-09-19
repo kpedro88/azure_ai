@@ -19,6 +19,7 @@ source init.sh
 
 * Enables the virtual environment
 * Adds the `secrets.sh` contents to the shell environment
+* Requests Azure login (if needed)
 
 ## Usage
 
