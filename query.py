@@ -76,7 +76,7 @@ class DeepResearcher:
             print("Could not find final message")
 
         # Clean-up and delete the agent once the run is finished.
-        agents_client.delete_agent(agent.id)
+        self.project_client.agents.delete_agent(self.agent.id)
         self._vprint("Deleted agent")
 
     def fetch_response(self, last_message_id, tmp_name):
